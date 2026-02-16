@@ -7,7 +7,7 @@
       <img src="https://img.shields.io/github/v/release/Dodecagram/SCU-Captcha-Solver" alt="release">
     </a>
     <a href="https://github.com/Dodecagram/SCU-Captcha-Solver/blob/master/LICENSE">
-      <img src="https://img.shields.io/github/license/Dodecagram/SCU-Captcha-Solver?color=blue" alt="license">
+      <img src="https://img.shields.io/github/license/Dodecagram/SCU-Captcha-Solver" alt="license">
     </a>
      <img src="https://img.shields.io/badge/size-%3C100KB-green.svg" alt="size < 100KB">  
     <img src="https://img.shields.io/badge/tech-VanillaJS-orange.svg" alt="tech VanillaJS">  
@@ -84,7 +84,7 @@ npm run build
 ### 1. 基本示例 (Vanilla JS)
 
 ```HTML
-<script src="https://Dodecagram.github.io/SCU-Captcha-Solver/scu-captcha-solver.min.js"></script>
+<script src="https://Dodecagram.github.io/SCU-Captcha-Solver/dist/scu-captcha-solver.min.js"></script>
 <script>
     (async () => {
         // 初始化识别器
@@ -110,7 +110,7 @@ npm run build
 ```JavaScript
 javascript:(function(){
     let script = document.createElement('script');
-    script.src = 'https://Dodecagram.github.io/SCU-Captcha-Solver/scu-captcha-solver.min.js';
+    script.src = 'https://Dodecagram.github.io/SCU-Captcha-Solver/dist/scu-captcha-solver.min.js';
     script.onload = async function(){
         const solver = new CaptchaSolver();
         await solver.init();
@@ -263,5 +263,6 @@ void 0;
 
 ## 📄 License
 MIT License.
+
 
 本项目仅供学习和交流使用，请勿用于非法用途。使用本工具产生的任何后果由使用者自行承担。
