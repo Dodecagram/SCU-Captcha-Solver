@@ -5,7 +5,7 @@ export class ImageProcessor {
     static process(imgData) {
         const matrix = Utils.imageDataToMatrix(imgData);
         
-        // 1. 灰度与去噪 (融合了你原来的逻辑)
+        // 1. 灰度与去噪
         const grayMatrix = this.preprocess(matrix);
         
         // 2. 高斯模糊
@@ -111,4 +111,5 @@ export class ImageProcessor {
         }
         return segs;
     }
+
 }
